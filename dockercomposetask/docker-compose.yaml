@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+
+  webcontainer:
+    image: nginx:latest
+    restart: always
+    ports:
+      - 8000:80
+    volumes:
+      - my-vol:/var/opt/nginx
+ 
+volumes:
+  my-vol:
